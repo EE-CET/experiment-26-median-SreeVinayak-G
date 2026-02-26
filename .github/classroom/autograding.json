@@ -1,0 +1,44 @@
+{
+  "tests": [
+    {
+      "name": "Example 1",
+      "setup": "javac src/Median.java",
+      "run": "java -cp src Median",
+      "input": "7\n0 1 2 4 6 5 3",
+      "output": "3",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 25
+    },
+    {
+      "name": "Already Sorted",
+      "setup": "javac src/Median.java",
+      "run": "java -cp src Median",
+      "input": "5\n10 20 30 40 50",
+      "output": "30",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 25
+    },
+    {
+      "name": "Reverse Sorted",
+      "setup": "javac src/Median.java",
+      "run": "java -cp src Median",
+      "input": "3\n100 50 10",
+      "output": "50",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 25
+    },
+    {
+      "name": "Negative Numbers",
+      "setup": "javac src/Median.java",
+      "run": "java -cp src Median",
+      "input": "5\n-5 -1 -3 -2 -4",
+      "output": "-3",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 25
+    }
+  ]
+}
